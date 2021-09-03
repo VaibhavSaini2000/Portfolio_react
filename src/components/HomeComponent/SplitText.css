@@ -1,10 +1,10 @@
-h1 span span { 
+div span span { 
   color: #fff; 
   position: relative;
   opacity: 0;
   animation: move-text 0.75s forwards;
 }
-h1 span span:nth-child(2n) { 
+div span span:nth-child(2n) { 
   color: #FF7171; 
 }
 @keyframes move-text {

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import {Link} from "react-router-dom";
 import Particles from 'react-particles-js';
 import SplitText from './SplitText';
-import Steps from './Steps';
+//import Steps from './Steps';
 import './Home.css';
 
 export default class Main extends Component {
@@ -137,7 +137,7 @@ export default class Main extends Component {
                 <Link to={"/resume"} className="nav-link">Resume</Link>
               </li>
               <li className="nav-item">
-                <Link to={"https://github.com/VaibhavSaini2000"} className="nav-link">Github</Link>
+                <a href={"https://github.com/VaibhavSaini2000"} className="nav-link">Github</a>
               </li>
             </ul>
           </div>
@@ -145,9 +145,9 @@ export default class Main extends Component {
 
         <div className="homemainsection">
           <div className="homemainheadingwrapper">
-            <h1  aria-label="Text" role="heading" className="splitext">
+            <div aria-label="Text" className="splitext">
               <SplitText copy="Welcome!" role="heading" />
-            </h1>
+            </div>
               <div className="homemainheading"> Welcome to the portfolio website by <span className="maincolouredspan">Vaibhav</span> Saini. Don't forget to checkout Algorithms Visualization.</div>
           </div>
           <div className="homemainimgwrapper">
