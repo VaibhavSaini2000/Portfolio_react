@@ -1,0 +1,76 @@
+.homesecondimgwrapper{
+  height: 100%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+
+.homesecondsection{
+  background: #fff;
+  height: 240vh;
+  width: 100%;
+  /* margin-bottom: 20vh; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hwdsitwork{
+  font-family: var(--bs-font-sans-serif);
+  font-weight: 800;
+  font-size: 3.2em;
+  line-height: 4.4rem;
+  text-align: center;
+  align-items: center;
+  color:#FF7171;
+  margin-top: 2%;
+}
+
+.homesecondsection .container {
+  height: 100%;
+  width: 100%;
+}
+
+.firststep{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 30%;
+  margin-top: 2%;
+  margin-bottom: 1.5%;
+}
+
+.homesecondheading {
+  font-family: var(--bs-font-sans-serif);
+  font-weight: 500;
+  font-size: 2.7rem;
+  line-height: 3.5rem;
+  text-align: left;
+  align-items: center;
+}
+
+.homesecondheadingwrapper {
+  font-family: var(--bs-font-sans-serif);
+  font-weight: 500;
+  font-size: 2.7rem;
+  line-height: 3.5rem;
+  text-align: left;
+  color : #9FD8DF;
+  height: 100%;
+  width:40%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.secondcolouredspan {
+  font-family: var(--bs-font-sans-serif);
+  font-weight: 500;
+  font-size: 2.7rem;
+  line-height: 3.5rem;
+  text-align: left;
+  align-items: center;
+  color : #FF7171;
+}
