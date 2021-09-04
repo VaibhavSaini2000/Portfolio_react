@@ -27,10 +27,10 @@ export default class ProjectsPage extends Component {
                 <Link to={"/projects"} className="nav-link" disabled>Projects</Link>
               </li>
               <li className="nav-item">
-                <Link to={"/resume"} className="nav-link">Resume</Link>
+                <a href={"https://drive.google.com/file/d/1z5DmFxXRY2CNvfvaywhdf9woQis0d9r8/view?usp=sharing"} target="_blank" rel="noreferrer" className="nav-link">Resume</a>
               </li>
               <li className="nav-item">
-                <a href={"https://github.com/VaibhavSaini2000"} className="nav-link">Github</a>
+                <a href={"https://github.com/VaibhavSaini2000"} target="_blank" rel="noreferrer" className="nav-link">Github</a>
               </li>
             </ul>
           </div>

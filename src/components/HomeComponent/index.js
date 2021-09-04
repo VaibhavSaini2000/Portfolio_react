@@ -24,7 +24,7 @@ export default class Main extends Component {
           <div className="collapse navbar-collapse" id="navbarTogglerDemo03">
             <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
               <li className="nav-item active">
-                <Link to={"/"} className="nav-link">Home</Link>
+                <Link to={"/"} className="nav-link" disabled>Home</Link>
               </li>
               <li className="nav-item">
                 <Link to={"/projects"} className="nav-link">Projects</Link>
