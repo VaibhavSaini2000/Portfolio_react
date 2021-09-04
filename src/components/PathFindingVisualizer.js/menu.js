@@ -6,10 +6,12 @@ class Menu extends Component {
         return (
             <nav className="nav alert-dark" >
                 <SimpleSelect
+                    algotype="Path Finding"                
                     onAlgoChanged = {this.props.onAlgoChanged}
                     items={this.props.algorithms}
                 />
                 <SimpleSelect
+                    algotype="Maze Generation"
                     onAlgoChanged={this.props.onMazeChanged}
                     items={this.props.mazes}
                 />

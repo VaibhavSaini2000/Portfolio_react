@@ -18,20 +18,20 @@ class Steps extends Component {
             <div className="homesecondsection">
                 <div className="container">
                     <div className="hwdsitwork">
-                        How does it work?
+                        Who am I?
                     </div>
                     <div className="firststep">
                         <div className="homesecondheadingwrapper">
                             <div className="homesecondheading"> 
-                                <span className="secondcolouredspan"> Connect </span><br/>Join our community to lever the benefits of people
+                                <span className="secondcolouredspan"> Intro! </span><br/>Final Year UG at IIT Kharagpur!
                             </div>
                         </div>
                         <div className="homesecondimgwrapper">
-                            <img src='assets/images/thirdlandingimg2.png' alt='Online Community'style={{width:"100%" , height:"auto"}}/>
+                            <img src='assets/images/myphoto.jpg' alt='Vaibhav' style={{width:"100%" , height:"auto"}}/>
                         </div>
                     </div>
 
-                    <div className="firststep">
+                    {/* <div className="firststep">
                         <div className="homesecondimgwrapper">
                             <img src='assets/images/fourthlandingimg2.png' alt='Online Community'style={{width:"100%" , height:"auto"}}/>
                         </div>
@@ -52,7 +52,7 @@ class Steps extends Component {
                         <div className="homesecondimgwrapper">
                             <img src='assets/images/fifthlandingimg.png' alt='Online Community'style={{width:"100%" , height:"auto"}}/>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
             </div>
             </>

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {Link} from "react-router-dom";
-import Particles from 'react-particles-js';
+
 import SplitText from './SplitText';
 //import Steps from './Steps';
 import './Home.css';
@@ -9,110 +9,6 @@ export default class Main extends Component {
   render() {
     return (    
       <div className="container">
-        <Particles 
-          params={{
-            "background": {
-              "color": {
-                "value": "#77ACF1"
-              },
-              "position": "50% 50%",
-              "repeat": "no-repeat",
-              "size": "cover"
-            },
-            "fullScreen": {
-              "enable": true,
-              "zIndex": -1
-            },
-            "interactivity": {
-              "events": {
-                "onClick": {
-                  "enable": false,
-                  "mode": "push"
-                },
-                "onHover": {
-                  "enable": true,
-                  "mode": "grab",
-                  "parallax": {
-                    "enable": false,
-                    "force": 60
-                  }
-                }
-              },
-              "modes": {
-                "bubble": {
-                  "distance": 400,
-                  "duration": 5,
-                  "opacity": 0.8,
-                  "size": 100
-                },
-                "grab": {
-                  "distance": 400
-                }
-              }
-            },
-            "particles": {
-              "color": {
-                "value": "#FFF"
-              },
-              "links": {
-                "color": {
-                  "value": "#FFF"
-                },
-                "distance": 150,
-                "enable": true,
-                "opacity": 0.4
-              },
-              "move": {
-                "attract": {
-                  "rotate": {
-                    "x": 600,
-                    "y": 1200
-                  }
-                },
-                "enable": true,
-                "outModes": {
-                  "bottom": "out",
-                  "left": "out",
-                  //"right": "out",
-                  //"top": "out"
-                }
-              },
-              "number": {
-                "density": {
-                  "enable": false
-                }
-              },
-              "opacity": {
-                "random": {
-                  "enable": true
-                },
-                "value": {
-                  "min": 0.1,
-                  "max": 0.5
-                },
-                "animation": {
-                  "enable": false,
-                  "speed": 3,
-                  "minimumValue": 0.1
-                }
-              },
-              "size": {
-                "random": {
-                  "enable": true
-                },
-                "value": {
-                  "min": 1,
-                  "max": 10
-                },
-                "animation": {
-                  "enable": false,
-                  "speed": 20,
-                  "minimumValue": 0.1
-                }
-              }
-            }
-          }}
-        />
 
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
           <Link to={"/"} className="navbar-brand" >
@@ -134,10 +30,10 @@ export default class Main extends Component {
                 <Link to={"/projects"} className="nav-link">Projects</Link>
               </li>
               <li className="nav-item">
-                <Link to={"/resume"} className="nav-link">Resume</Link>
+                <a href={"https://drive.google.com/file/d/1z5DmFxXRY2CNvfvaywhdf9woQis0d9r8/view?usp=sharing"} target="_blank" rel="noreferrer" className="nav-link">Resume</a>
               </li>
               <li className="nav-item">
-                <a href={"https://github.com/VaibhavSaini2000"} className="nav-link">Github</a>
+                <a href={"https://github.com/VaibhavSaini2000"} target="_blank" rel="noreferrer" className="nav-link">Github</a>
               </li>
             </ul>
           </div>
@@ -148,10 +44,10 @@ export default class Main extends Component {
             <div aria-label="Text" className="splitext">
               <SplitText copy="Welcome!" role="heading" />
             </div>
-              <div className="homemainheading"> Welcome to the portfolio website by <span className="maincolouredspan">Vaibhav</span> Saini. Don't forget to checkout Algorithms Visualization.</div>
+              <div className="homemainheading"> Welcome to the portfolio website by Vaibhav Saini. Don't forget to checkout <span className="maincolouredspan">Algorithms Visualization</span> under Projects Tab.</div>
           </div>
           <div className="homemainimgwrapper">
-              <img src='assets/images/mainlandingimg2.png' alt='Online Community'style={{width:"auto" , height:"100%"}}/>
+              <img src='assets/images/mainlandingimg2.png' alt='Online Community'style={{width:"100%" , height:"auto"}}/>
           </div>
         </div>
 
