@@ -6,6 +6,11 @@
 	transform: rotateX(-20deg) rotateY(-30deg);
 }
 
+.back {
+  text-align: left;
+  color:#fff;
+}
+
 .side {
 	width: 100%;
 	height: 100%;

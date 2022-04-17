@@ -6,6 +6,7 @@ import ProjectsPage from './ProjectsPage';
 import SortingVisualizer from './SortingVisualizer';
 import Pathfinder from './PathFindingVisualizer.js';
 import Queen from './QueensProblemVisualizer';
+import Covid19Visualizer from './Covid19Visualizer';
 
 export default class Main extends Component {
   render() {
@@ -184,6 +185,7 @@ export default class Main extends Component {
             <Route path='/sortingvisualizer'  component={SortingVisualizer}/>
             <Route path='/pathfinder'  component={Pathfinder}/>
             <Route path='/nqueens'  component={Queen}/>
+            <Route path='/covid19'  component={Covid19Visualizer}/>
             <Route path='/projects' component={ProjectsPage}/>
             <Route path='/' component={Home}/>
           </Switch>

@@ -11,9 +11,9 @@ class Queen extends Component {
         isRunning:false
     }
 
-    constructor(props) {
-        super(props);
-    }
+    // constructor(props) {
+    //     super(props);
+    // }
     componentDidMount() {
         const board = getBoard(this.state.number);
        // board[3][3].isPresent = true;

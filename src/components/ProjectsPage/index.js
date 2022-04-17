@@ -39,6 +39,7 @@ export default class ProjectsPage extends Component {
           <ProjectCard title="Sorting Algorithms Visualizer" img="assets/images/sorting.png" description="Sorting Algorithms Visualizer" linkurl="/sortingvisualizer" />
           <ProjectCard title="Path Finding Algorithms Visualizer" img="assets/images/pathfinderalgo.png" description="Path Finding Algorithms Visualizer" linkurl="/pathfinder" />
           <ProjectCard title="N-Queens Problem Visualizer" img="assets/images/nqueensproblem.png" description="N-Queens Problem Visualizer" linkurl="/nqueens" />
+          <ProjectCard title="Covid-19 Visualizer" img="assets/images/covidgraph.png" description="Covid-19 Statistics Dashboard" linkurl="/covid19" />
         </div>
       </div>
     );

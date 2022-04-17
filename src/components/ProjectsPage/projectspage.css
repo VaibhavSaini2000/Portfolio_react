@@ -2,7 +2,16 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  flex-wrap: wrap;
   margin-top: 10vh;
+}
+
+@media screen and (max-width: 900px) {
+  .projects{
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 600px) {

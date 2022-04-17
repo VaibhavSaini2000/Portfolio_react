@@ -1,0 +1,70 @@
+.CovidVisualizer {
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 4vh;
+  width: 90%;
+}
+
+.back {
+  text-align: left;
+  color:#fff;
+}
+
+.dropdownn {
+  margin: 1%;
+}
+.filters {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.boxes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  color: white;
+  margin: 1%;
+}
+
+.indigo {
+  background: indigo;
+  padding: 3%;
+  border: 2px solid black;
+}
+
+.purple {
+  background: purple;
+  padding: 3%;
+  border: 2px solid black;
+}
+
+.red {
+  background: red;
+  padding: 3%;
+  border: 2px solid black;
+}
+
+.backlink:link {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.backlink:visited {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.backlink:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+.backlink:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}

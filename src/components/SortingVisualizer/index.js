@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Dropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
+import { Link } from 'react-router-dom';
 import CreatingBars from './CreatingBars';
 import Play from '@material-ui/icons/PlayCircleOutlineRounded';
 import Forward from '@material-ui/icons/SkipNextRounded';
@@ -158,6 +159,11 @@ export default class SortingVisualizer extends Component {
 		});
 	};
 
+  changealgo = (algo) => {
+    this.setState({algorithm:algo});
+    this.generateRandomArray();
+  }
+
   render() {
     let bars = this.state.array.map((value,index) => {
       return <CreatingBars key={index} index={index} height={value} color={this.state.colorKey[index]} changeArray={this.changeArray}/>
@@ -181,6 +187,7 @@ export default class SortingVisualizer extends Component {
 
     return (
       <div className="sortingvisualizer">
+        <h3 className='back'><Link to='/projects' className='backlink'>Back to Projects</Link></h3>
         <h1>Sorting Visualizer</h1>
         <h3>Chosen Algorithm: {this.state.algorithm}</h3>
         <Dropdown isOpen={this.state.dropdownOpen} toggle={this.toggle}>
@@ -188,9 +195,12 @@ export default class SortingVisualizer extends Component {
             {this.state.algorithm? this.state.algorithm : <div>Choose Sorting Algorithm</div>}
           </DropdownToggle>
           <DropdownMenu>
-            <DropdownItem onClick={() => this.setState({algorithm:'Selection Sort'})}>Selection Sort</DropdownItem>
+            <DropdownItem onClick={() => this.changealgo('Selection Sort')}>Selection Sort</DropdownItem>
+            <DropdownItem onClick={() => this.changealgo('Bubble Sort')}>Bubble Sort</DropdownItem>
+            <DropdownItem onClick={() => this.changealgo('Insertion Sort')}>Insertion Sort</DropdownItem>
+            {/* <DropdownItem onClick={() => this.setState({algorithm:'Selection Sort'})}>Selection Sort</DropdownItem>
             <DropdownItem onClick={() => this.setState({algorithm:'Bubble Sort'})}>Bubble Sort</DropdownItem>
-            <DropdownItem onClick={() => this.setState({algorithm:'Insertion Sort'})}>Insertion Sort</DropdownItem>
+            <DropdownItem onClick={() => this.setState({algorithm:'Insertion Sort'})}>Insertion Sort</DropdownItem> */}
           </DropdownMenu>
         </Dropdown>
         <div className='frame'>
